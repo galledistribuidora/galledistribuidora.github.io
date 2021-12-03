@@ -18,16 +18,7 @@
 </head>
 
 <body>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script>
-    $(function(){
-       $("#btn-mensagem").click(function(){
-    $("#modal-mensagem").modal();
-});
 
-    });
-    </script>
     <!-- banner -->
     <div class="jumbotron jumbotron-fluid" id="banner" style=" /* The background image */
   background-image: url('img/banner-bk.jpg');
@@ -116,80 +107,44 @@
                     <h2 class="font-weight-bold"><font color="#fff">Baixe Nossos Catálogos</font></h2>
                     <p class="my-4"><font color="#fff">Se você não encontrar o que estava procurando,</font>
                         <br> <a href="#">Entre em Contato</a> <font color="#fff">para saber mais!</font></p>
-                    <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue">Ver Lista de Catálogos</a>
-					<!-- Button trigger modal-->
-<button class="btn btn-primary" id="btn-mensagem">Exibir modal via JavaScript</button>
+					<button class="btn my-4 font-weight-bold atlas-cta cta-green" onclick="exibirDownloads()"> Ver Lista de Catálogos</button>
+	<div id="tabelaDownloads" style="display:none;">
+  <table style="TABLE-LAYOUT: fixed;" class="table"  bgcolor="#64686d">
+  <thead style="background-color:#2D343E;">
+    <tr>
+      <th scope="col"><font color="#fff">Baixar Catálogo</font></th>
+    </tr>
+  </thead>
+  <tbody >
+  
+    <tr style="background-color: rgba(0, 0, 0, 0.30);">
+	  <td><a href="#" target="_blank"><i class="icon fa fa-download"></i> CATALOGO1.PDF</a></td>
+    </tr>
+	<tr style="background-color: rgba(0, 0, 0, 0.30);">
+	  <td><a href="#" target="_blank"><i class="icon fa fa-download"></i> CATALOGO1.PDF</a></td>
+    </tr>
+	<tr style="background-color: rgba(0, 0, 0, 0.30);">
+	  <td><a href="#" target="_blank"><i class="icon fa fa-download"></i> CATALOGO1.PDF</a></td>
+    </tr>
+	<tr style="background-color: rgba(0, 0, 0, 0.30);">
+	  <td><a href="#" target="_blank"><i class="icon fa fa-download"></i> CATALOGO1.PDF</a></td>
+    </tr>
+	<tr style="background-color: rgba(0, 0, 0, 0.30);">
+	  <td><a href="#" target="_blank"><i class="icon fa fa-download"></i> CATALOGO1.PDF</a></td>
+    </tr>
 
-<!-- Modal: modalCart -->
-<div class="modal fade" id="modal-mensagem" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <!--Header-->
-      <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Your cart</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-      </div>
-      <!--Body-->
-      <div class="modal-body">
-
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Product name</th>
-              <th>Price</th>
-              <th>Remove</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Product 1</td>
-              <td>100$</td>
-              <td><a><i class="fas fa-times"></i></a></td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Product 2</td>
-              <td>100$</td>
-              <td><a><i class="fas fa-times"></i></a></td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Product 3</td>
-              <td>100$</td>
-              <td><a><i class="fas fa-times"></i></a></td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>Product 4</td>
-              <td>100$</td>
-              <td><a><i class="fas fa-times"></i></a></td>
-            </tr>
-            <tr class="total">
-              <th scope="row">5</th>
-              <td>Total</td>
-              <td>400$</td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-
-      </div>
-      <!--Footer-->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
-        <button class="btn btn-primary">Checkout</button>
-      </div>
-    </div>
-  </div>
+  </tbody>
+</table>
+<script type="text/javascript">
+				$(function() {
+  $('.tablesorter').tablesorter();
+  $('.tablepager').tablepager();
+});
+			</script>
 </div>
-<!-- Modal: modalCart -->
                 </div>
-                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center flex-md-first">
+				<br>
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6  flex-md-first">
                     <img src="img/logo.png" alt="Safe and reliable" class="mx-auto d-block">
                 </div>
             </div>
@@ -243,19 +198,19 @@
                     <img src="img/client-1.png" class="mx-auto d-block" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 10px;">
                 </div>
                 <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="img/client-2.png" class="mx-auto d-block" style="box-shadow: rgba(255, 9, 9, 0.35) 0px 5px 15px; border-radius: 10px;">
+                    <img src="img/client-2.png" class="mx-auto d-block" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 10px;">
                 </div>
                 <div class="col-sm-4 col-md-2 py-2 align-self-center">
                     <img src="img/client-3.png" class="mx-auto d-block" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 10px;">
                 </div>
                 <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="img/client-4.png" class="mx-auto d-block" style="box-shadow: rgba(255, 9, 9, 0.35) 0px 5px 15px; border-radius: 10px;">
+                    <img src="img/client-4.png" class="mx-auto d-block" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 10px;">
                 </div>
                 <div class="col-sm-4 col-md-2 py-2 align-self-center">
                     <img src="img/client-5.png" class="mx-auto d-block" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 10px;">
                 </div>
                 <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="img/client-6.png" class="mx-auto d-block" style="box-shadow: rgba(255, 9, 9, 0.35) 0px 5px 15px; border-radius: 10px;">
+                    <img src="img/client-6.png" class="mx-auto d-block" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 10px;">
                 </div>
             </div>
         </div>
@@ -307,10 +262,15 @@
       AOS.init({
       });
     </script>
-	<script type="application/javascript">
-	$("#btn-mensagem").click(function(){
-    $("#modal-mensagem").modal();
-});
+	<script type="text/javascript">
+	function exibirDownloads() {
+  var x = document.getElementById("tabelaDownloads");
+  if (x.style.display !== "block") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 </script>
 </body>
 
