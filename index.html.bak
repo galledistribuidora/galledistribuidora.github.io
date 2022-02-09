@@ -124,15 +124,15 @@
 	<tr style="background-color: rgba(0, 0, 0, 0.30);">
 	  <td><a href="pdf/ferramentas_e_ferragens.pdf" target="_blank"><i class="icon fa fa-download"></i> FERRAMENTAS E FERRAGENS.PDF</a></td>
     </tr>
-    <tr style="background-color: rgba(0, 0, 0, 0.30);">
-	  <td><a href="https://www.hafele.com.br/INTERSHOP/web/WFS/Haefele-HBR-Site/pt_BR/-/BRL/Static-View/pdfcatalog/pt_BR/OGH_2018_FF/index.html?startpage=0.1#page_0.1" target="_blank"><i class="icon fa fa-download"></i> Catálogo HÄFELE</a></td>
+	<tr style="background-color: rgba(0, 0, 0, 0.30);">
+	  <td><a href="pdf/catalogo_nambei.pdf" target="_blank"><i class="icon fa fa-download"></i> FIOS E CABOS.PDF</a></td>
+    </tr>
+	<tr style="background-color: rgba(0, 0, 0, 0.30);">
+	  <td><a href="pdf/catalogo_masster.pdf" target="_blank"><i class="icon fa fa-download"></i> CANOS E ELETRODUTOS.PDF</a></td>
     </tr>
 
 	<tr style="background-color: rgba(0, 0, 0, 0.30);">
-	  <td><a href="#" target="_blank"><i class="icon fa fa-download"></i> CATALOGO1.PDF</a></td>
-    </tr>
-	<tr style="background-color: rgba(0, 0, 0, 0.30);">
-	  <td><a href="#" target="_blank"><i class="icon fa fa-download"></i> CATALOGO1.PDF</a></td>
+	  <td><a href="https://www.hafele.com.br/INTERSHOP/web/WFS/Haefele-HBR-Site/pt_BR/-/BRL/Static-View/pdfcatalog/pt_BR/OGH_2018_FF/index.html?startpage=0.1#page_0.1" target="_blank"><i class="icon fa fa-download"></i> CATÁLOGO HÄFELE</a></td>
     </tr>
 
   </tbody>
